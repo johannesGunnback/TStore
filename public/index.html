@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="/bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
+    <script src="/bower_components/lodash/dist/lodash.min.js" type="text/javascript" ></script>
+    <script src="/bower_components/bluebird/js/browser/bluebird.js" type="text/javascript" ></script>
+    <script src="/bower_components/angular-google-maps/dist/angular-google-maps.min.js" type="text/javascript" ></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript" ></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.min.js" type="text/javascript" ></script>
+    <script src="/bower_components/json2/json2.js" type="text/javascript" ></script>
+    <script src="/bower_components/ngImgCrop/compile/minified/ng-img-crop.js" type="text/javascript" ></script>
+    <script src="external/bootstrap.min.js"></script>
+    <script src="app/app.js" type="text/javascript" ></script>
+    <script src="app/service/session-service.js" type="text/javascript" ></script>
+    <script src="app/controller/login-controller.js" type="text/javascript" ></script>
+    <script src="app/controller/admin-controller.js" type="text/javascript" ></script>
+    <script src="app/directives/directives.js" type="text/javascript" ></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="/bower_components/ngImgCrop/compile/minified/ng-img-crop.css">
+</head>
+<body ng-app="Application" class="home"  >
+    <div ng-include="'views/top-menu.html'" ></div>
+    <div ng-view></div>
+</body>
+</html>
