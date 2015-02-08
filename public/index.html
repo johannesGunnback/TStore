@@ -25,17 +25,22 @@
     <link rel="stylesheet" href="/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
     <link rel="stylesheet" href="/bower_components/ngImgCrop/compile/minified/ng-img-crop.css">
 </head>
-<body ng-app="Application" class="home"  >
-    <div ng-include="'views/top-menu.html'" ></div>
-    <div ng-view></div>
-    <div id="fb-root"></div>
-    <script>
-        $((function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk')));</script>
-</body>
+    <body ng-app="Application" class="home"  >
+        <div class="col-lg-2" ></div>
+        <div class="col-lg-8 well" style="background-color: #e6e6e6; padding: 0; border: 0;" >
+            <div style="text-align: center; background-color: #3e3f3a;" >
+                <img src="../images/bgv2.png" style="max-width:150px;height:auto;" >
+            </div>
+            <div ng-include="'views/top-menu.html'" ></div>
+                <div style="padding-left: 20px; padding-right: 20px;">
+                    <div ng-view></div>
+                </div>
+            <div  style="background-color: #3e3f3a;  padding: 20px; border-radius: 0 0 4px 4px; color: #98978b;">
+                <div style="width: 100%;"><span style="font-weight: bold;" >Adress:</span> Repslagaregatan 15, Motala</div>
+                <div style="width: 100%;"><span style="font-weight: bold;" >Telefon:</span> 072-203 80 95</div>
+                <div style="width: 100%;"><span style="font-weight: bold;" >Mail:</span> enkoppteab@gmail.com</div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </body>
 </html>
