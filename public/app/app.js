@@ -22,7 +22,7 @@ app.config(['$routeProvider', function($routeProvider) {
 
 app.config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
-        key: 'AIzaSyBS5asJJWOEQLIr3K7vj_8LWd0tmmgqlhQ',
+        key: 'AIzaSyDdf_ofKFwCm0VVYOTlsijh9GwHXoEg-Ys',
         v: '3.17',
         libraries: 'weather,geometry,visualization,places'
     });
