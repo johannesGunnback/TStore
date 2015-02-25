@@ -27,24 +27,25 @@
 </head>
     <body ng-app="Application" class="home"  >
         <div class="col-lg-2" ></div>
-        <div class="col-lg-8 well" style="background-color: #e6e6e6; padding: 0; border: 0;" >
-            <div style="text-align: left; background-color: #9f52a4;" >
-      	      <table>
+        <div class="col-lg-8" style="padding: 0; border: 0;" >
+            <div style="text-align: left; background-color: #9f52a4; margin-top: 10px; border-radius: 5px; box-shadow: 5px 5px 5px #888888" >
+      	      <table style="margin-left 5px;">
       	      	<tr>
       	      		<td valign="top">
-         	      		<img src="../images/bgv2.png" style="max-width:220px;height:auto;" >
+         	      		<img src="../images/bgv2.png" style="max-width:220px;height:auto; " >
          	      	</td>
          	      	<td valign="bottom">
             	    		<b>&nbsp;<span style="font-size: 80px; color: white;">En kopp te</span></b>
             	    	</td>
            	 		</tr>
 		         </table>
+                <div ng-include="'views/top-menu.html'" ></div>
             </div>
-            <div ng-include="'views/top-menu.html'" ></div>
+
                 <div style="padding-left: 20px; padding-right: 20px;">
                     <div ng-view></div>
                 </div>
-            <div  style="background-color: #3e3f3a;  padding: 20px; border-radius: 0 0 4px 4px; color: #98978b;">
+            <div class="col-lg-12"  style="background-color: #5D345F;  padding: 20px; color: #98978b; border-radius: 5px; box-shadow: 5px 5px 5px #888888; margin-top: 20px;">
                 <div style="width: 100%;"><span style="font-weight: bold;" >Adress:</span> Repslagaregatan 15B, 591 30 Motala</div>
                 <div style="width: 100%;"><span style="font-weight: bold;" >Telefon:</span> 072-203 80 95</div>
                 <div style="width: 100%;"><span style="font-weight: bold;" >Mail:</span> enkoppteab@gmail.com</div>
