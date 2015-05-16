@@ -15,6 +15,12 @@ app.config(['$routeProvider', function($routeProvider) {
         when('/about', {
             templateUrl: '/views/about.html'
         }).
+        when('/vatternrundanerbjudande', {
+            controller : function(){
+                window.location = 'Vatternrundanerbjudande.pdf';
+            },
+            template : "<div></div>"
+         }).
         otherwise({
             redirectTo: '/home'
         });
