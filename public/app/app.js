@@ -15,10 +15,14 @@ app.config(['$routeProvider', function($routeProvider) {
         when('/about', {
             templateUrl: '/views/about.html'
         }).
-        when('/vatternrundanerbjudande', {
+        when('/various', {
+
+            templateUrl: '/views/various.html'
+         }).
+/*        when('/extraoffer', {
 
             templateUrl: '/views/extraoffer.html'
-         }).
+         }).*/
         otherwise({
             redirectTo: '/home'
         });
