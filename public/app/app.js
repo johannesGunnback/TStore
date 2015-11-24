@@ -19,6 +19,10 @@ app.config(['$routeProvider', function($routeProvider) {
 
             templateUrl: '/views/various.html'
          }).
+        when('/products', {
+
+            templateUrl: '/views/products.html'
+         }).
 /*        when('/extraoffer', {
 
             templateUrl: '/views/extraoffer.html'
